@@ -14,3 +14,5 @@ startPage and endPage is starting and ending page of imgur channel
 Code is using imgur RestFull Api.
 
 This code is depends of python 2.7 ( work with 2.6 )
+
+Code written for linux fileSystem ( file name errors in windows not handled! norm function do that in linux but not working good in windows )
