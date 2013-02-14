@@ -11,5 +11,6 @@ channel is subreddit section of imgur ( like this eyes make imgur.com/r/eyes )
 sort is sort mode of that pages ( new , top/all , top/month , top/week , top/day )
 startPage and endPage is starting and ending page of imgur channel
 
+Code is using imgur RestFull Api.
 
-This code is depends of BeautifulSoup and termcolor from python packages ( use pip install or easy_install to install thos packages )
+This code is depends of python 2.7 ( work with 2.6 )
