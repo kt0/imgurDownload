@@ -138,10 +138,10 @@ def downloadPostsFrom(subreddit,mode='new',start=0,end=0):
         makeSaveDir(subreddit+'/'+mode.replace('/','-'))
     loadList(subreddit)
     lst = open('.list.txt','a+')
-    print 'Download images from page ',start,' to ',end,' of ',mode,' images of www.filmot.org/r/'+subreddit+' into '+subreddit+' folder'
+    print 'Download images from page ',start,' to ',end,' of ',mode,' images of www.imgur.com/r/'+subreddit+' into '+subreddit+' folder'
     i = end
     while i >= 0:
-        url = "http://www.filmot.org/r/"+subreddit+"/"+mode+"/page/"+str(i)+"?scrolled"
+        url = "http://www.imgur.com/r/"+subreddit+"/"+mode+"/page/"+str(i)+"?scrolled"
         print 'Geting Page : '+info(url)
         f = http.request('GET',url).data.decode("utf-8")
         soup = BeautifulSoup(f)
