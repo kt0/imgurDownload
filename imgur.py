@@ -100,7 +100,7 @@ def downloadPostsFrom(subreddit,mode='new',start=0,end=0):
         else:
             continue
         for img in reversed(images):
-            uri = 'http://'+baseUrl+'/'+img['hash']+img['ext']
+            uri = 'http://i.'+baseUrl+'/'+img['hash']+img['ext']
             if img['hash'] in LIST:
                 #print 'Duplicate :',img['hash']
                 continue
